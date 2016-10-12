@@ -83,7 +83,6 @@ func Search(medicalConditionName, protocolTitle, drugName, sponsorName,
 			entry.Each(func(k int, sel *goquery.Selection) {
 				data := sel.Text()
 				data = strings.TrimSpace(data)
-
 				if k == 0 {
 					link := sel.Find("a")
 					href, _ := link.Attr("href")
@@ -104,5 +103,9 @@ func Search(medicalConditionName, protocolTitle, drugName, sponsorName,
 		return
 	})
 
+	if len(studies) > 0 {
+		// first row is always empty in the table
+		studies = studies[1:len(studies)]
+	}
 	return studies
 }
