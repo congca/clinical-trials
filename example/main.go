@@ -4,7 +4,7 @@ import "fmt"
 import "github.com/fjukstad/clinical"
 
 func main() {
-	fmt.Println(clinical.Search("breast cancer",
+	studies := clinical.Search("breast cancer",
 		"",
 		"",
 		"",
@@ -17,5 +17,9 @@ func main() {
 		"",
 		"",
 		"",
-		""))
+		"")
+
+	for _, study := range studies {
+		fmt.Println(study)
+	}
 }
