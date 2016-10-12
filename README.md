@@ -28,11 +28,11 @@ Found 69 studies:
 
 # Install 
 - Install [go](http://golang.org) and set it up accordingly. 
-- Get [goquery](https://github.com/PuerkitoBio/goquery): 'go get github.com/PuerkitoBio/goquery'
+- Get [goquery](https://github.com/PuerkitoBio/goquery): `go get github.com/PuerkitoBio/goquery`
 - Get [clinical-trials](github.com/fjukstad/clinical-trials) `go get github.com/fjukstad/clinical-trials`
-- (optional) Install the CLI `cd $GOPATH/src/github.com/fjukstad/clinical/clinical-trials/ && go install `
+- (optional) Install the CLI `cd $GOPATH/src/github.com/fjukstad/clinical/clinical-trials/ && go install`
 
-# Usage (cli) 
+# Usage (CLI) 
 ```
 Usage of clinical-trials:
   -controlNumber string
